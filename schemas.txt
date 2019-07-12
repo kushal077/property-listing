@@ -1,0 +1,45 @@
+MODELS FOR OUR LISTING WEBSITE .
+
+1)LISTINGS:
+
+	- id INT 
+	- realtor : INT (FOREIGN_KEY[REALTOR])
+	- title : STR
+	- adress : STR
+	- description : TEXT 
+ 	- city : STR
+	- state : STR
+	- zipcode : INT
+	- price : INT
+	- bedrooms : INT
+	- bathrooms : INT
+	- square feet:  INT
+	- lot size: FLOAT
+	- garage : INT
+	- listing date : DATE 
+	- main image :STR
+	- 5 other images :STR
+
+2)REALTORS
+	
+	- id : INT
+	- name : STR
+	- photo : STR
+	- description : TEXT 
+	- email : STR
+	- phone : STR
+	- is_mvp : BOOL[0]
+	- hire_date : DATE
+
+
+3)CONTACT
+	
+	- id : INT 
+	- user_id : INT 
+	- listing : INT 
+	- listing_id : INT 
+	- name : STR
+	- email : STR
+	- phone : STR
+	- message : TEXT
+	- contact_date : DATE

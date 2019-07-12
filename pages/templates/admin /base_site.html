@@ -1,0 +1,14 @@
+{% extends "admin/base.html" %}
+{% laod static %}
+
+{% block branding %}
+    <h1 id="site-name">
+        <a href="{% url 'admin:index' %}">
+            {{ ('BTRE') }}
+        </a>
+    </h1>
+{% endblock %}
+
+{% block extrastyle %}
+<link rel="stylesheet" href="{% static 'css/admin.css' %}">
+{%  endblock %}
